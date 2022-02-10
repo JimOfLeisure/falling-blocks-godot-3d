@@ -1,0 +1,45 @@
+# Godot-specific ignores
+.import/
+export.cfg
+### This is excluded because Android builds may have secrets in export_presets.cfg ; see https://github.com/godotengine/godot-demo-projects/issues/329
+# re-ignoring it so manual exports don't mess with the to-be-finely-honed settings; can manually add if needs updating
+export_presets.cfg
+mono_crash.*.json
+
+# Mono-specific ignores
+.mono/
+data_*/
+
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+
+# Visual Studio Code
+# .vscode
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+msbuild.log
+msbuild.err
+msbuild.wrn
+*.exe
+
+# Visual Studio 2015
+.vs/
